@@ -1,0 +1,33 @@
+Question 1:
+Hi George,
+
+A record is representing a single element we can search for. In our case a record would be a restaurant and its associated information (name, neighborhood, dining style, ...).
+
+Indexing represents the phase where all the records (restaurants data) are processed and uploaded to Algolia in order to be searchable.
+
+The custom ranking allows you to display the most relevant restaurants first to the user. It would make sense to display on top the best restaurants corresponding to the user's research, with the best score and the maximum reviews, so we could put the number of stars and reviews in the custom ranking.
+
+Best regards,
+Florian
+
+Question 2:
+Hi Matt,
+
+I understand your frustation that we made it more difficult to clear and delete indexes. Actually it has been made to better avoid accidental loss of data by forcing the user to aknowledge the deletion of a whole index.
+
+If you need to frequently and automatically clearing or deleting specific indexes I would suggest to use our API to perform this action automatically.
+
+Best regards,
+Florian
+
+Question 3:
+Hi Leo,
+
+To integrate Algolia to your website the process is divided into 2 main tasks:
+- Upload your searchable data to Algolia, either using our dashboard or using our API.
+- Implement the search experience in your website using one of the many tools we provide.
+
+Depending on the technical stack your website is using and the data you want to be searchable we can recommend you the best approach to use for both parts.
+
+Bets regards,
+Florian
