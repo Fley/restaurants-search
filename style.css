@@ -1,0 +1,218 @@
+body {
+  background-image: url('resources/graphics/background.png');
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+@media (min-width: 768px) {
+  .container {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+.container .container-header {
+  border-radius: 0px;
+  background: #1c688e;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .container .container-header {
+    padding: 25px;
+  }
+}
+.container .container-main {
+  padding-top: 3px;  
+  padding-bottom: 3px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.container .container-header .search-bar {
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+  background: #ffffff;
+  width: 100%;
+  padding: 10px 13px;
+
+  font-size: 15px;
+}
+.container .container-header .search-bar::placeholder {
+  color: #b2b2b2;
+}
+
+.container-main .sidebar {
+  display: table-cell;
+  width: 160px;
+  padding-right: 23px;
+  padding-left: 23px;
+  border-right: 1px solid #e5e5e5;
+  margin-right: 8px;
+  background-color: #ffffff;
+}
+@media (max-width: 576px) {
+  .container-main .sidebar {
+    display: none;
+  }
+}
+.container .sidebar .sidebar-inner {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 113px;
+  margin-bottom: 23px;
+  z-index: 0;
+}
+
+.container .sidebar .filter {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+.container .sidebar .filter .filter-header {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+}
+.filter .filter-value {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.filter .filter-value.active {
+  background: #2797c5;
+  color: #ffffff;
+}
+.filter .filter-value .label,
+.filter .filter-value .value {
+  display: table-cell;
+  font-size: 13.0px;
+  
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.filter .filter-value .value {
+  width: 25px;
+  color: #999999;
+}
+.filter .filter-value.active .value {
+  color: #ffffff;
+}
+
+.rating {
+  display: inline-block;
+  vertical-align: middle;
+}
+.rating,
+.rating-value {
+  width: 80px;
+  height: 15px;
+  background-image: url(resources/graphics/stars-icons.png);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position-x: left;
+  background-position-y: top;
+}
+.rating-value {
+  background-position-y: bottom;
+}
+
+.search {
+  display: table-cell;
+  padding: 24px;
+  padding-left: 32px;
+  color: #333333;
+  font-size: 14px;
+}
+.search .search-header,
+.search .search-header > span {
+  border-bottom-color: #e6e6e6;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-right: 64px;
+}
+@media (max-width: 576px) {
+  .search .search-header,
+  .search .search-header > span {
+    padding: 0;
+  }
+}
+.search .search-header span {
+  border-bottom-color: #ffffff;
+}
+.search-body {
+  padding-top: 24px;
+}
+
+.restaurant {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.restaurant em {
+  font-weight: 600;
+}
+.restaurant .restaurant-picture-container,
+.restaurant .restaurant-body {
+  display: table-cell;
+}
+.restaurant .restaurant-picture-container {
+  width: 80px;
+}
+.restaurant .restaurant-picture {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 4px;
+}
+@media (max-width: 576px) {
+  .restaurant .restaurant-picture-container {
+    display: none;
+  }
+}
+.restaurant .restaurant-body {
+  vertical-align: top;
+  padding-left: 16px;
+  color: #707070;
+  font-size: 14px;
+}
+.restaurant .restaurant-body div {
+  margin-bottom: 4px;
+}
+.restaurant .restaurant-body .restaurant-header {
+  color: #000000;
+  font-size: 16px;
+}
+
+.search-footer {
+  text-align: center;
+}
+input[type="button"] {
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  cursor: pointer;
+  height: 37px;
+  width: 100%;
+}
+.search-footer input[type="button"] {
+  width: 184px;
+}
